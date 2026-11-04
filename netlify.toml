@@ -1,0 +1,10 @@
+# Netlify deployment config for PhysicsQuest
+# The app is a fully static Next.js export — no server functions needed.
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  # Next.js 16 requires Node.js >= 20.9
+  NODE_VERSION = "22"
